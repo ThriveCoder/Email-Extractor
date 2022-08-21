@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <title>Email Extractor</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Email Extractor</h1>
+        <p>
+            Copy text from any source and paste it here. Then click extract button. You can select diffrent separator also.
+        </p>
+        <div class="email-input-place">
+            <label for="txtcontent">Add content</label>
+            <textarea id="txtcontent" class="message" contenteditable="true" data-placeholder="Input contents"></textarea>
+        </div>
+        <div class="select-extbtn">
+            <div class="lable-select">
+                <label for="sep">Email Separator: </label>
+                <select id="sep">
+                    <option value=", ">Comma,</option>
+                    <option value=" - ">Hyphen-</option>
+                    <option value=" / ">Forward Slash/</option>
+                    <option value=" ">Space </option>
+                    <option value=" _ ">underscroe_</option>
+                    <option value="; ">Semicolon;</option>
+                </select>
+            </div>
+            <div>
+            <button id="extract">
+                <i class="fa fa-sign-out-alt"></i>
+                Extract Email
+            </button>
+        </div>
+        </div>
+        
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
